@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="corousel.css">
     <link rel="stylesheet" href="effects.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Concert Ticketing</title>
 </head>
 
 <body class="bg-gradient">

@@ -45,7 +45,7 @@ if(isset($_SESSION['logged_in'])){
                 style="background-color: #D9D9D9; box-shadow: 0 5px 5px hsl(0, 0%, 65%, 0.4); ">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="./soundcloud/images/headphones-2104207_640.png" alt="" width="30" height="30"
+                        <img src="headphones-2104207_640.png" alt="" width="30" height="30"
                             class="d-inline-block align-text-top">
                         LiveAmp
                     </a>
