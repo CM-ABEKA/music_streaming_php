@@ -1,0 +1,59 @@
+body {
+  background: #642b73;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c6426e, #642b73);
+  overflow-x: hidden;
+  width: 100vw;
+}
+main .content-all {
+  display: none;
+}
+
+.preload {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1e1803;
+  position: absolute;
+  z-index: 1;
+}
+.preload > div {
+  height: 100px;
+  width: 100px;
+  border: 15px solid #f2f2f2;
+  border-top-color: hsl(130, 98%, 39%);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: spin 1.5s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#spotify iframe,
+#deezer iframe {
+  width: 500px;
+  height: 300px;
+}
+#spotify iframe {
+  margin-top: 0;
+  border-radius: 8px;
+}
+#spotify img{
+
+  100px
+}
+#deezer img {
+  margin-bottom: 20px;
+  widows: 100px;
+}
+.spotify p{
+  margin-bottom: 0;
+}

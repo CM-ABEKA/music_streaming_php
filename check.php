@@ -22,10 +22,10 @@
     <script src="https://kit.fontawesome.com/0c4b9907e3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <link rel="shortcut icon" href="./soundcloud/images/headphones-2104207_640.png" type="image/x-icon">
-    <link rel="stylesheet" href="./soundcloud/css/corousel.css">
-    <link rel="stylesheet" href="./soundcloud/css/effects.css">
-    <link rel="stylesheet" href="./soundcloud/css/style.css">
+    <link rel="shortcut icon" href="headphones-2104207_640.png" type="image/x-icon">
+    <link rel="stylesheet" href="corousel.css">
+    <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
@@ -51,9 +51,9 @@
 }
     ?>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./soundcloud/scripts/script.js"></script>
+    <script src="script.js"></script>
     <!-- <script src="about.js"></script> -->
-    <script src="./soundcloud/scripts/effects.js"></script>
+    <script src="effects.js"></script>
 </body>
 
 </html>

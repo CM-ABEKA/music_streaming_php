@@ -1,0 +1,291 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+body {
+  background: #f1f1f1;
+  overflow-y: auto;
+}
+html,
+body,
+.framework7-root {
+  overflow-y: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  text-align: center;
+  line-height: 70px;
+}
+
+main {
+  margin: 86px 16px 16px;
+  // padding: 16px;
+  // background: #fff;
+  position: relative;
+  float: left;
+}
+#video {
+  width: 100%;
+  float: left;
+}
+.contain #video {
+  width: calc(70vw - 20px);
+}
+.contain #video .player {
+  height: calc(39.37vw - 20px);
+}
+#video .player {
+  // @include aspect-ratio(16, 9);
+  max-height: calc(100vh - 102px);
+  height: 56.25vw;
+  // max-width: 177.78vh;
+  // width: ;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video .player .content {
+  background: no-repeat center center;
+  background-size: cover;
+  background-image: url(https://members.kelbyone.com/wp-content/uploads/2016/07/Aaron_MainImage1_07.13.16_AdjustmentBrush.jpg);
+}
+#video .player .overlay {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+#video .player .overlay i {
+  font-size: 40px;
+}
+#video .player .toggle {
+  color: #fff;
+  right: 8px;
+  bottom: 8px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+}
+#lessons,
+#related {
+  position: relative;
+  width: calc(30vw - 20px);
+  float: right;
+  // min-height: 50vh;
+  background: #fff;
+  margin-left: 4px;
+  margin-top: 8px;
+}
+.contain #lessons {
+  margin-top: 0;
+}
+#lessons li.active {
+  // background: #f1f1f1;
+  border-left: 4px solid #ff9800;
+}
+#lessons li {
+  border-left: 4px solid #fff;
+}
+#forum,
+#details {
+  position: relative;
+  width: calc(70vw - 20px);
+  float: left;
+  // min-height: 50vh;
+  background: #fff;
+  margin-right: 4px;
+  margin-top: 8px;
+}
+
+.content-block-title {
+  padding-top: 0;
+}
+.list-block {
+  margin: 0;
+}
+.list-block .item-media {
+  min-width: 20px;
+}
+
+.list-block .item-inner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.12);
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.list-block li:after {
+  background-color: #f1f1f1;
+}
+
+.content-block-inner:before {
+  height: 0;
+}
+
+#details .page-content {
+  padding-top: 0;
+}
+
+.content-block {
+  margin: 0;
+}
+
+a.color-black {
+  color: #000000 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+.list-block .floating-label {
+  margin-left: 0;
+}
+.tabbar a.tab-link {
+  color: #000;
+  border-bottom: 2px solid #fff;
+}
+.tabbar a.tab-link.active {
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
+  float: left;
+}
+
+.card-header {
+  height: 0;
+  padding-top: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.tabs .tab.active {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row .col-25 {
+  width: 25%;
+  width: -webkit-calc((100% - 16px * 4) / 4);
+  width: calc((100% - 16px * 4) / 4);
+}
+
+.content-block-inner > p:last-child {
+  margin-bottom: 1em;
+}
+
+.item-after.controls i {
+  margin: 0 0 0 16px;
+}
+
+.item-title span {
+  margin-left: 8px;
+}
+.item-after span {
+  margin-left: 8px;
+}
+
+.controls span {
+  margin-left: 16px;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(5, 5, 5, 0.4);
+}
+
+.color-gray {
+  color: #9e9e9e !important;
+}
+#player {
+  max-height: 100%;
+}
+#video {
+  background: #000;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+
+  bottom: 125%;
+  left: 125%;
+  margin-left: -30px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.awards i {
+  width: 20px;
+  margin: 0 6px 0 0;
+  font-size: 16px !important;
+}

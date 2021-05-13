@@ -1,0 +1,58 @@
+body {
+  background-color: #101010;
+  color: black;
+}
+.music-player {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.music-player .row {
+  transform: rotate(-90deg);
+
+  margin: 30px;
+}
+.container {
+  position: relative;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.container h1 {
+  margin: auto;
+  padding: 10px;
+}
+.container audio {
+  position: relative;
+  margin: auto;
+  margin: 10px auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+label {
+  width: 40px;
+  margin: 10px;
+}
+.content {
+  display: grid;
+  /* grid-template-columns: auto min-content; */
+  justify-content: center;
+  justify-items: end;
+  align-items: center;
+  gap: 5px 10px;
+}
+input {
+  margin: 0;
+}
