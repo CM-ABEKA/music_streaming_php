@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/0c4b9907e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/bootstrap.css">
     <link rel="stylesheet" href="./CSS/form.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
