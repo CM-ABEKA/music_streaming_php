@@ -93,7 +93,7 @@ if(isset($_SESSION['logged_in'])){
 
         <main>
             <!-- corousel start-->
-            <section class="my-corous">
+            <section class="my-corous" style="color: black">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
